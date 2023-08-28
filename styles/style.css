@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: #f3f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.header, .buttons, .results, footer {
+    flex-grow: 1;
+}
+
+.buttons, .results, footer {
+    font-family: Bradley Hand, Courier New, Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    background: #414040;
+    margin: 0;
+    color: #f3f2f2;
+}
+
+.header h1 {
+    margin: 0;
+    text-shadow: #161616 5px 5px 1px;
+}
+
+.header p {
+    margin: 5px 0 0 0;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 1rem 0.25rem 1rem;
+}
+
+.rock, .paper, .scissors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.rock>input, .paper>input, .scissors>input {
+    width: 30%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    border: 0.25rem solid black;
+    border-radius: 1rem;
+    background: #b9b9b9;
+}
+
+.rock>input:hover, .paper>input:hover, .scissors>input:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+    background: #2c1efa;
+    box-shadow: 0 0 1rem #161616;    
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    background: rgb(18, 18, 26);
+    margin: 0;
+    height: auto;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    border: 0.10rem solid #fff;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+    background: #e22b2b;
+}
