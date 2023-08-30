@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,40 @@
     <script src="./js/index.js" defer></script>
     <title>Rock Paper Scissors Game</title>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1>Rock Paper Scissors</h1>
             <p>Choose your weapon</p>
         </div>
+        <div class="match-result">
+            <h3>Do you want to play a game?</h3>
+        </div>
         <div class="buttons">
             <div class="rock">
-                <input name="rock" value="rock" type="image" id="rock" src="./img/rock.png" alt="rock">
+                <input name="rock" class="rock-button" value="rock" type="image" id="rock" src="./img/rock.png"
+                    alt="rock">
                 <p>Rock</p>
             </div>
             <div class="paper">
-                <input type="image" value="paper" id="paper" src="./img/paper.png" alt="paper">
+                <input type="image" class="paper-button" value="paper" id="paper" src="./img/paper.png" alt="paper">
                 <p>Paper</p>
             </div>
             <div class="scissors">
-                <input type="image" value="scissors" id="scissors" src="./img/scissors.png" alt="scissors">
+                <input type="image" class="scissors-button" value="scissors" id="scissors" src="./img/scissors.png"
+                    alt="scissors">
                 <p>Scissors</p>
             </div>
         </div>
         <div class="results">
-            <p id="player">Player: 0</p>
-            <p id="computer">Computer: 0</p>
+            <p id="player">Player: <span id="player-score">0</span></p>
+            <p id="computer">Computer: <span id="computer-score">0</span></p>
         </div>
         <footer>
             <p>Created by <a href="https://github.com/Warckor" target="_blank" rel="noopener noreferrer">Warckor</a></p>
         </footer>
     </div>
 </body>
+
 </html>

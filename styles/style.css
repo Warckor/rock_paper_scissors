@@ -44,11 +44,17 @@ body, html {
     font-size: 18px;
 }
 
+.match-result {
+    align-self: center;
+    margin: 15px 0 0 0;
+    font-size: 30px;
+}
+
 .buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 1rem 0.25rem 1rem;
+    margin: 0.5rem 1rem 0.25rem 1rem;
 }
 
 .rock, .paper, .scissors {
@@ -59,7 +65,7 @@ body, html {
     margin: 20px 0;
 }
 
-.rock>input, .paper>input, .scissors>input {
+.rock-button, .paper-button, .scissors-button {
     width: 30%;
     height: auto;
     margin: 20px;
@@ -69,10 +75,10 @@ body, html {
     background: #b9b9b9;
 }
 
-.rock>input:hover, .paper>input:hover, .scissors>input:hover {
+.rock-button:hover, .paper-button:hover, .scissors-button:hover {
     cursor: pointer;
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: all 0.1s ease;
     background: #2c1efa;
     box-shadow: 0 0 1rem #161616;    
 }
@@ -105,4 +111,16 @@ a:hover {
     transform: scale(1.1);
     transition: 0.5s;
     background: #e22b2b;
+}
+
+.selection {
+    transform: scale(1.1);
+    border-color: #fa2121;
+}
+
+.result-effect {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
 }
